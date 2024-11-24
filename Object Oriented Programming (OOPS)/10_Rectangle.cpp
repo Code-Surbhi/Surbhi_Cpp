@@ -5,7 +5,9 @@ class Rectangle{
         int length;
         int breadth;
     public:
+
         //Declaring the function
+
         Rectangle();
         Rectangle(int l, int b);
         Rectangle(Rectangle &r);
@@ -18,7 +20,9 @@ class Rectangle{
         bool isSquare();
         ~Rectangle();
 };
+
 //Defining the function
+
 Rectangle::Rectangle(){
     length = 1;
     breadth = 1;
