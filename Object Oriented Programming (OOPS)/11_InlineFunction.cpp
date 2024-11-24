@@ -11,11 +11,15 @@ class Test{
     void fun2();
     void fun3();
 };
+
 //declaring the function inside the class and then defining it outside makes it non inline function
+
 void Test::fun2(){
     cout<<"NON INLINE"<<endl;
 }
+
 //we can declare the function inside the class and to make it inline we can define it outside and write inline keyword
+
 inline void Test::fun3(){
     cout<<"INLINE"<<endl;
     cout<<"Although written outside, its inline only"<<endl;
