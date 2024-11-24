@@ -9,13 +9,17 @@ class Rectangle{
         length = l;
         breadth = b;
     }
+
     //function inside of class becomes INLINE function - its better if its not complex
+
     int area(){
         return length*breadth;
     }
     int perimeter();
 };
+
 //Scope resolution operator :: shows that this function has scope inside of rectangle class (return_type Class_name::function_name )
+
 int Rectangle::perimeter(){
     return 2*(length+breadth);
 }
